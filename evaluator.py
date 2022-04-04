@@ -23,7 +23,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[0] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[0] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[0] else 1 for item in y_test]
         n = len(y_test)
 
         c1_accuracy = sum([y_pred[i]!=y_test[i] for i in range(n)])/float(n)
@@ -32,7 +32,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[1] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[1] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[1] else 1 for item in y_test]
         n = len(y_test)
 
         c2_accuracy = sum([y_pred[i]!=y_test[i] for i in range(n)])/float(n)
@@ -41,7 +41,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[2] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[2] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[2] else 1 for item in y_test]
         n = len(y_test)
 
         c3_accuracy = sum([y_pred[i]!=y_test[i] for i in range(n)])/float(n)
@@ -59,7 +59,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[0] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[0] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[0] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
@@ -71,7 +71,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[1] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[1] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[1] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
@@ -83,7 +83,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[2] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[2] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[2] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
@@ -105,7 +105,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[0] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[0] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[0] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
@@ -117,7 +117,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[1] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[1] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[1] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
@@ -129,7 +129,7 @@ class evaluator(object):
         y_pred = list(self.model.y_pred)
         y_pred = [0 if item != unique_classes[2] else 1 for item in y_pred]
         y_test = list(self.model.y_test)
-        y_test = [0 if item != unique_classes[2] else 1 for item in y_pred]
+        y_test = [0 if item != unique_classes[2] else 1 for item in y_test]
         n = len(y_test)
 
         tp = sum([y_pred[i] == 1 and y_test[i] == 1 for i in range(n)])
