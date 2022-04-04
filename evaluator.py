@@ -8,9 +8,9 @@ class evaluator(object):
         #three classes 
         self.model = model
         self.unique_classes = set(list(self.model.y_test))
-        self.c1_n = sum([item for item in list(self.model.y_test) if item == unique_classes[0]])
-        self.c2_n = sum([item for item in list(self.model.y_test) if item == unique_classes[1]])
-        self.c3_n = sum([item for item in list(self.model.y_test) if item == unique_classes[2]])
+        self.c1_n = len([item for item in list(self.model.y_test) if item == unique_classes[0]])
+        self.c2_n = len([item for item in list(self.model.y_test) if item == unique_classes[1]])
+        self.c3_n = len([item for item in list(self.model.y_test) if item == unique_classes[2]])
         
     def calculate_accuracy(self):
         '''calculates TP+TN/(Total)
@@ -46,7 +46,7 @@ class evaluator(object):
 
         c3_accuracy = sum([y_pred[i]!=y_test[i] for i in range(n)])/float(n)
 
-        return (self.c1_n*c1+self.c2_n*c2+self.c3_n*c3)/float(n)
+        return (self.c1_n*c1_accuracy+self.c2_n*c2_accuracy+self.c3_n*c3_accuracy)/float(n)
         
 
     def precision(self):
